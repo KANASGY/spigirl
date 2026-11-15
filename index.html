@@ -113,7 +113,7 @@
 .glossary-footer p{font:500 19px/1.6 var(--serif);color:#53435f}
 .glossary-disclaimer{margin:26px 0 0;color:#8a8191;font-size:11px;line-height:2}
 @media(max-width:800px){.culture-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.glossary-columns{grid-template-columns:1fr}.glossary-group-label small{margin-left:0}}
-@media(max-width:600px){.culture-section,.glossary-section{padding:80px 0}.culture-grid{grid-template-columns:1fr;gap:11px}.culture-item{min-height:auto;padding:24px 22px}.culture-heading .note{margin-top:12px}.culture-intro{font-size:14px;line-height:2.1}.glossary-heading{margin-bottom:30px}.glossary-group{padding:20px 18px}.glossary-group summary{font-size:16px}.glossary-group summary small{font-size:8px;max-width:105px}.glossary-group-label{flex-wrap:wrap}.glossary-footer{display:block}.glossary-footer p{margin-top:10px;font-size:17px}}
+@media(max-width:700px){.culture-section,.glossary-section{padding:80px 0}.culture-grid{grid-template-columns:1fr;gap:11px}.culture-item{min-height:auto;padding:24px 22px}.culture-heading .note{margin-top:12px}.culture-intro{font-size:14px;line-height:2.1}.glossary-heading{margin-bottom:30px}.glossary-group{padding:20px 18px}.glossary-group summary{font-size:16px}.glossary-group summary small{font-size:8px;max-width:105px}.glossary-group-label{flex-wrap:wrap}.glossary-footer{display:block}.glossary-footer p{margin-top:10px;font-size:17px}}
 
 
 /* Seance story framing */
@@ -161,14 +161,29 @@
 
 .hero-logo,.vision-logo{mix-blend-mode:multiply;filter:none!important;background:transparent!important;}
 
-.hero-logo,.vision-logo{mix-blend-mode:normal!important;background:transparent!important;aspect-ratio:auto!important;object-fit:contain!important;filter:none!important}.hero-logo{width:min(650px,90vw)!important;max-height:440px;height:auto!important;margin:10px auto 18px!important}.vision-logo{max-height:95%;height:auto!important}
+.hero-logo,.vision-logo{mix-blend-mode:normal!important;background:transparent!important;aspect-ratio:auto!important;object-fit:contain!important;filter:none!important}.hero-logo{width:min(760px,96vw)!important;max-height:440px;height:auto!important;margin:10px auto 18px!important}.vision-logo{max-height:95%;height:auto!important}
 @media(max-width:650px){.hero-logo{width:100%!important;max-height:none;margin:10px auto 18px!important}}
 
 .hero-logo,.vision-logo{height:auto;aspect-ratio:1500/500;object-fit:contain;mix-blend-mode:normal}
 
 #about .intro-narrative{max-width:720px;margin:auto}#about .intro-narrative p{margin:0 auto 24px;line-height:2.25;font-size:clamp(14px,1.3vw,17px);font-family:var(--serif);color:#5e586b}#about .intro-narrative .intro-date{font-family:var(--sans);letter-spacing:.1em;font-weight:600;color:#846e95;margin-top:42px;margin-bottom:10px}#about .intro-narrative .intro-ending{font-size:clamp(20px,2.4vw,30px);color:#473652;margin-top:37px;margin-bottom:0;line-height:1.8}
 </style>
-<style> .hero-logo{aspect-ratio:1100/733;width:min(680px,92vw);filter:none;mix-blend-mode:multiply} .vision-logo{mix-blend-mode:multiply;filter:none} @media(max-width:650px){.hero-logo{width:100%;max-width:600px;margin:8px auto 16px}}</style><style>.hero-logo,.vision-logo{aspect-ratio:auto!important;height:auto!important;object-fit:contain!important;mix-blend-mode:normal!important;background:transparent!important;filter:none!important}</style>
+<style> .hero-logo{aspect-ratio:1100/733;width:min(820px,96vw);filter:none;mix-blend-mode:multiply} .vision-logo{mix-blend-mode:multiply;filter:none} @media(max-width:650px){.hero-logo{width:100%;max-width:600px;margin:8px auto 16px}}</style><style>.hero-logo,.vision-logo{aspect-ratio:auto!important;height:auto!important;object-fit:contain!important;mix-blend-mode:normal!important;background:transparent!important;filter:none!important}</style>
+<style id="mobile-section-spacing">
+@media (max-width:680px) {
+  main > section:not(.hero) {padding-top:48px!important;padding-bottom:52px!important;}
+  main > .hero {height:auto!important;min-height:0!important;max-height:none!important;}
+  .hero .hero-in {height:auto!important;min-height:0!important;padding-top:38px!important;padding-bottom:58px!important;}
+  main .section-head, main .glossary-heading {margin-bottom:22px!important;}
+  main .section-title {margin-bottom:16px;}
+  #about .intro-narrative p {margin-bottom:18px;}
+  #about .intro-narrative .intro-date {margin-top:29px;}
+  #about .intro-narrative .intro-ending {margin-top:25px;margin-bottom:0;}
+  .world-intro {padding-top:28px!important;padding-bottom:36px!important;}
+  .world-finale {padding-top:32px!important;}
+  .footer {padding-top:30px;padding-bottom:30px;}
+}
+</style>
 </head>
 <body>
 <header class="header"><div class="container headerin"><button aria-controls="mainnav" aria-expanded="false" aria-label="メニューを開く" class="menu-btn">MENU ＋</button><nav aria-label="メインナビゲーション" class="nav" id="mainnav"><a href="#about">CONCEPT</a><a href="#culture">CULTURE</a><a href="#world">WORLD</a><a href="#glossary">GLOSSARY</a><a href="#characters">HEROINES</a><a href="#story">STORY</a><a href="#experience">FEATURES</a><a class="navcta" href="#info">作品情報</a></nav></div></header>
