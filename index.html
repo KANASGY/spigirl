@@ -300,7 +300,17 @@ main > .hero .hero-logo {width:min(1040px,96vw)!important;max-width:none!importa
 main > .hero h1 {width:min(100%,690px);max-width:690px;font-size:clamp(32px,3.3vw,47px);line-height:1.45;margin:0 0 24px;}
 main > .hero .hero-desc {width:min(100%,690px);max-width:690px;}
 @media(max-width:650px){main > .hero .hero-logo{width:100%!important;margin:0 auto 48px!important}main > .hero h1{font-size:clamp(23px,5.9vw,32px);line-height:1.6}main > .hero .hero-in{padding-top:28px!important;padding-bottom:50px!important}}
-</style></head>
+</style><style id="hero-balance-refinement">
+#top.hero{height:auto!important;min-height:100svh!important;max-height:none!important;display:flex;align-items:center;padding-top:72px!important;box-sizing:border-box}
+#top .hero-in{width:min(calc(100% - 64px),1120px);height:auto!important;min-height:0!important;display:flex;align-items:center;justify-content:center;text-align:center;padding:32px 0 84px!important;margin-inline:auto}
+#top .hero-logo{display:block;width:min(900px,100%)!important;max-width:none!important;max-height:none!important;height:auto!important;margin:0 auto clamp(36px,5vw,66px)!important;flex-shrink:0}
+#top h1{width:100%;max-width:100%;font-size:clamp(28px,3.25vw,46px);line-height:1.55;letter-spacing:.035em;text-align:center;margin:0 auto 22px}
+#top .hero-desc{width:100%;max-width:100%;text-align:center;font-size:clamp(14px,1.4vw,18px);line-height:1.95;margin:0 auto 28px}
+#top .buttons{width:auto;max-width:100%;justify-content:center;margin-inline:auto}
+#top .status{margin-top:24px;text-align:center}
+@media(max-width:700px){#top.hero{min-height:0!important;padding-top:64px!important}#top .hero-in{width:calc(100% - 36px);padding:30px 0 70px!important}#top .hero-logo{width:100%!important;margin-bottom:38px!important}#top h1{font-size:clamp(20px,5.3vw,32px);line-height:1.65;margin-bottom:18px}#top .hero-desc{font-size:14px;margin-bottom:24px}#top .buttons{width:min(100%,300px)}#top .status{margin-top:20px}}
+</style>
+</head>
 <body>
 <header class="header"><div class="container headerin"><button aria-controls="mainnav" aria-expanded="false" aria-label="メニューを開く" class="menu-btn">MENU ＋</button><nav aria-label="メインナビゲーション" class="nav" id="mainnav"><a href="#about">CONCEPT</a><a href="#story">STORY</a><a href="#characters">HEROINES</a><a href="#world">WORLD</a><a href="#culture">CULTURE</a><a href="#glossary">GLOSSARY</a><a href="#experience">FEATURES</a><a href="#game-design">GAME DESIGN</a><a class="navcta" href="#info">作品情報</a></nav></div></header>
 <main>
