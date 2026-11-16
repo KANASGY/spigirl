@@ -305,6 +305,18 @@
 #info .schedule-item b{display:block;font-size:18px;line-height:1.55;color:#30283f}
 #info .schedule-item small{display:block;font-size:14px;line-height:1.6;color:#8d75a4;margin-top:5px}
 @media(max-width:650px){#info .spec-wide{padding:20px 17px}#info .schedule-title{font-size:23px}#info .schedule-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#info .schedule-item b{font-size:16px}#info .schedule-item small{font-size:13px}}
+#world .world-intro.show .orbit-a{animation:worldOrbitA 11s ease-in-out infinite}
+#world .world-intro.show .orbit-b{animation:worldOrbitB 11s ease-in-out infinite}
+#world .world-intro.show .boundary-cut{animation:worldBoundaryPulse 5.5s ease-in-out infinite}
+#world .world-intro.show .boundary-point{animation:worldPointPulse 4s ease-in-out infinite}
+#world .world-intro.show .point-b{animation-delay:-2s}
+#world .world-intro.show .boundary-visual:after{animation:worldGridDrift 18s linear infinite}
+@keyframes worldOrbitA{0%,100%{transform:translateX(-45%) scale(1);opacity:.68}50%{transform:translateX(-37%) scale(1.035);opacity:1}}
+@keyframes worldOrbitB{0%,100%{transform:translateX(45%) scale(1);opacity:.68}50%{transform:translateX(37%) scale(1.035);opacity:1}}
+@keyframes worldBoundaryPulse{0%,100%{transform:rotate(14deg) scaleY(.92);opacity:.62;filter:brightness(.9)}50%{transform:rotate(14deg) scaleY(1.06);opacity:1;filter:brightness(1.28)}}
+@keyframes worldPointPulse{0%,100%{transform:scale(.78);opacity:.5}50%{transform:scale(1.55);opacity:1}}
+@keyframes worldGridDrift{from{background-position:0 0}to{background-position:32px 32px}}
+@media(prefers-reduced-motion:reduce){#world .orbit-a,#world .orbit-b,#world .boundary-cut,#world .boundary-point,#world .boundary-visual:after{animation:none!important}}
 </style></head>
 <body>
 <header class="header"><div class="container headerin"><button aria-controls="mainnav" aria-expanded="false" aria-label="メニューを開く" class="menu-btn">MENU ＋</button><nav aria-label="メインナビゲーション" class="nav" id="mainnav"><a href="#about">CONCEPT</a><a href="#characters">HEROINES</a><a href="#story">STORY</a><a href="#world">WORLD</a><a href="#experience">FEATURES</a><a href="#game-design">GAME DESIGN</a><a href="#culture">CULTURE</a><a href="#glossary">GLOSSARY</a><a class="navcta" href="#info">作品情報</a></nav></div></header>
