@@ -319,17 +319,19 @@
 @keyframes worldPointPulse{0%,100%{transform:scale(.78);opacity:.5}50%{transform:scale(1.55);opacity:1}}
 @keyframes worldGridDrift{from{background-position:0 0}to{background-position:32px 32px}}
 @media(prefers-reduced-motion:reduce){#world .orbit-a,#world .orbit-b,#world .boundary-cut,#world .boundary-point,#world .boundary-visual:after{animation:none!important}}
-.story-art .electric-arc{position:absolute;z-index:4;width:58px;height:170px;background:linear-gradient(180deg,#fff 0%,#c8dcff 42%,#78a9ff 100%);clip-path:polygon(48% 0,55% 0,47% 34%,61% 34%,39% 100%,46% 49%,34% 49%);filter:drop-shadow(0 0 3px #fff) drop-shadow(0 0 9px #8eb8ff) drop-shadow(0 0 20px #557ee8);mix-blend-mode:screen;opacity:0;pointer-events:none}
-.story-art .arc-a{right:17%;top:19%;transform:rotate(13deg) scale(.72)}
-.story-art .arc-b{left:37%;top:35%;transform:rotate(-8deg) scale(.48)}
-.story-art .arc-c{right:28%;top:58%;transform:rotate(24deg) scale(.34)}
-.story-art.show .arc-a{animation:electricFlashA 4.8s steps(1,end) infinite}
-.story-art.show .arc-b{animation:electricFlashB 6.2s steps(1,end) -1.7s infinite}
-.story-art.show .arc-c{animation:electricFlashC 5.4s steps(1,end) -3.1s infinite}
-@keyframes electricFlashA{0%,13%,18%,47%,52%,100%{opacity:0}14%{opacity:.92}15%{opacity:.18}16%{opacity:1}17%{opacity:.35}48%{opacity:.75}49%{opacity:.12}50%{opacity:.9}51%{opacity:.2}}
-@keyframes electricFlashB{0%,29%,34%,72%,76%,100%{opacity:0}30%{opacity:.7}31%{opacity:.15}32%{opacity:.88}33%{opacity:.25}73%{opacity:.65}74%{opacity:.1}75%{opacity:.8}}
-@keyframes electricFlashC{0%,39%,43%,84%,88%,100%{opacity:0}40%{opacity:.72}41%{opacity:.12}42%{opacity:.9}85%{opacity:.6}86%{opacity:.08}87%{opacity:.75}}
-@media(prefers-reduced-motion:reduce){.story-art .electric-arc{animation:none!important;opacity:0!important}}
+.story-art .electric-arc{position:absolute;z-index:5;width:74px;height:205px;background:linear-gradient(180deg,#fff 0%,#d8e7ff 35%,#78aaff 72%,#a77cff 100%);clip-path:polygon(48% 0,56% 0,47% 34%,63% 34%,37% 100%,46% 49%,32% 49%);filter:drop-shadow(0 0 4px #fff) drop-shadow(0 0 13px #9fc5ff) drop-shadow(0 0 30px #537df2);mix-blend-mode:screen;opacity:0;pointer-events:none}
+.story-art .arc-a{right:12%;top:13%;transform:rotate(13deg) scale(1.05)}
+.story-art .arc-b{left:32%;top:27%;transform:rotate(-8deg) scale(.75)}
+.story-art .arc-c{right:23%;top:52%;transform:rotate(24deg) scale(.6)}
+.story-art.show:before{animation:portalCharge 3.4s ease-in-out infinite}
+.story-art.show .arc-a{animation:electricFlashA 3.2s steps(1,end) infinite}
+.story-art.show .arc-b{animation:electricFlashB 4.1s steps(1,end) -.9s infinite}
+.story-art.show .arc-c{animation:electricFlashC 3.7s steps(1,end) -2s infinite}
+@keyframes portalCharge{0%,100%{filter:drop-shadow(0 0 18px #b7caf5) brightness(1);box-shadow:0 0 40px #7d99d888,80px 0 100px #6b8bd766}50%{filter:drop-shadow(0 0 34px #dce7ff) brightness(1.55);box-shadow:0 0 75px #b4ceffcc,95px 0 145px #7c9affaa}}
+@keyframes electricFlashA{0%,10%,24%,55%,70%,100%{opacity:0}11%{opacity:1}15%{opacity:.28}18%{opacity:1}23%{opacity:.18}56%{opacity:.92}61%{opacity:.25}65%{opacity:1}69%{opacity:.15}}
+@keyframes electricFlashB{0%,30%,46%,78%,90%,100%{opacity:0}31%{opacity:.95}36%{opacity:.22}40%{opacity:1}45%{opacity:.12}79%{opacity:.82}84%{opacity:1}89%{opacity:.15}}
+@keyframes electricFlashC{0%,45%,63%,100%{opacity:0}46%{opacity:.9}51%{opacity:.2}56%{opacity:1}62%{opacity:.12}}
+@media(prefers-reduced-motion:reduce){.story-art:before,.story-art .electric-arc{animation:none!important}.story-art .electric-arc{opacity:0!important}}
 </style></head>
 <body>
 <header class="header"><div class="container headerin"><button aria-controls="mainnav" aria-expanded="false" aria-label="メニューを開く" class="menu-btn">MENU ＋</button><nav aria-label="メインナビゲーション" class="nav" id="mainnav"><a href="#about">CONCEPT</a><a href="#characters">HEROINES</a><a href="#story">STORY</a><a href="#world">WORLD</a><a href="#experience">FEATURES</a><a href="#game-design">GAME DESIGN</a><a href="#culture">CULTURE</a><a href="#glossary">GLOSSARY</a><a class="navcta" href="#info">作品情報</a></nav></div></header>
